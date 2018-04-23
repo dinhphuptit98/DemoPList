@@ -7,21 +7,35 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4E17E860208D8CCF00C54B9D /* City.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E17E85F208D8CCF00C54B9D /* City.swift */; };
+		4E17E862208D8D7000C54B9D /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E17E861208D8D7000C54B9D /* DataService.swift */; };
+		4E17E864208D8F4700C54B9D /* District.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E17E863208D8F4700C54B9D /* District.swift */; };
+		4E17E866208D90F200C54B9D /* DistrictsTableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4E17E865208D90F200C54B9D /* DistrictsTableViewController.swift */; };
 		4EB13B4C208D79DB0031460D /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB13B4B208D79DB0031460D /* AppDelegate.swift */; };
-		4EB13B4E208D79DB0031460D /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB13B4D208D79DB0031460D /* ViewController.swift */; };
 		4EB13B51208D79DB0031460D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB13B4F208D79DB0031460D /* Main.storyboard */; };
 		4EB13B53208D79DB0031460D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4EB13B52208D79DB0031460D /* Assets.xcassets */; };
 		4EB13B56208D79DB0031460D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4EB13B54208D79DB0031460D /* LaunchScreen.storyboard */; };
+		4EB13B5E208D7D3E0031460D /* Cities.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EB13B5D208D7D3E0031460D /* Cities.plist */; };
+		4EB13B60208D7D490031460D /* Districts.plist in Resources */ = {isa = PBXBuildFile; fileRef = 4EB13B5F208D7D490031460D /* Districts.plist */; };
+		4EB13B64208D84E20031460D /* TableViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB13B63208D84E20031460D /* TableViewController.swift */; };
+		4EB13B66208D8B0C0031460D /* PlistService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4EB13B65208D8B0C0031460D /* PlistService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		4E17E85F208D8CCF00C54B9D /* City.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = City.swift; sourceTree = "<group>"; };
+		4E17E861208D8D7000C54B9D /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
+		4E17E863208D8F4700C54B9D /* District.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = District.swift; sourceTree = "<group>"; };
+		4E17E865208D90F200C54B9D /* DistrictsTableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DistrictsTableViewController.swift; sourceTree = "<group>"; };
 		4EB13B48208D79DB0031460D /* DemoPList.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DemoPList.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		4EB13B4B208D79DB0031460D /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		4EB13B4D208D79DB0031460D /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		4EB13B50208D79DB0031460D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		4EB13B52208D79DB0031460D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		4EB13B55208D79DB0031460D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		4EB13B57208D79DB0031460D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4EB13B5D208D7D3E0031460D /* Cities.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Cities.plist; sourceTree = "<group>"; };
+		4EB13B5F208D7D490031460D /* Districts.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = Districts.plist; sourceTree = "<group>"; };
+		4EB13B63208D84E20031460D /* TableViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TableViewController.swift; sourceTree = "<group>"; };
+		4EB13B65208D8B0C0031460D /* PlistService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,10 +69,17 @@
 			isa = PBXGroup;
 			children = (
 				4EB13B4B208D79DB0031460D /* AppDelegate.swift */,
-				4EB13B4D208D79DB0031460D /* ViewController.swift */,
+				4EB13B63208D84E20031460D /* TableViewController.swift */,
+				4E17E85F208D8CCF00C54B9D /* City.swift */,
+				4E17E863208D8F4700C54B9D /* District.swift */,
+				4E17E861208D8D7000C54B9D /* DataService.swift */,
+				4EB13B65208D8B0C0031460D /* PlistService.swift */,
 				4EB13B4F208D79DB0031460D /* Main.storyboard */,
+				4E17E865208D90F200C54B9D /* DistrictsTableViewController.swift */,
 				4EB13B52208D79DB0031460D /* Assets.xcassets */,
 				4EB13B54208D79DB0031460D /* LaunchScreen.storyboard */,
+				4EB13B5D208D7D3E0031460D /* Cities.plist */,
+				4EB13B5F208D7D490031460D /* Districts.plist */,
 				4EB13B57208D79DB0031460D /* Info.plist */,
 			);
 			path = DemoPList;
@@ -124,8 +145,10 @@
 			buildActionMask = 2147483647;
 			files = (
 				4EB13B56208D79DB0031460D /* LaunchScreen.storyboard in Resources */,
+				4EB13B60208D7D490031460D /* Districts.plist in Resources */,
 				4EB13B53208D79DB0031460D /* Assets.xcassets in Resources */,
 				4EB13B51208D79DB0031460D /* Main.storyboard in Resources */,
+				4EB13B5E208D7D3E0031460D /* Cities.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -136,8 +159,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4EB13B4E208D79DB0031460D /* ViewController.swift in Sources */,
 				4EB13B4C208D79DB0031460D /* AppDelegate.swift in Sources */,
+				4E17E866208D90F200C54B9D /* DistrictsTableViewController.swift in Sources */,
+				4E17E864208D8F4700C54B9D /* District.swift in Sources */,
+				4EB13B64208D84E20031460D /* TableViewController.swift in Sources */,
+				4E17E860208D8CCF00C54B9D /* City.swift in Sources */,
+				4EB13B66208D8B0C0031460D /* PlistService.swift in Sources */,
+				4E17E862208D8D7000C54B9D /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
