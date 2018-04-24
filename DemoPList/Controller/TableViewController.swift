@@ -1,5 +1,5 @@
 //
-//  DistrictsTableViewController.swift
+//  TableViewController.swift
 //  DemoPList
 //
 //  Created by dinhphu on 4/23/18.
@@ -8,11 +8,11 @@
 
 import UIKit
 
-class DistrictsTableViewController: UITableViewController {
+
+class TableViewController: UITableViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-
         // Uncomment the following line to preserve selection between presentations
         // self.clearsSelectionOnViewWillAppear = false
 
@@ -29,16 +29,20 @@ class DistrictsTableViewController: UITableViewController {
 
     override func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         // #warning Incomplete implementation, return the number of rows
-        return DataService.shared.districts.count
+        return DataService.shared.cities.count
     }
 
+    
     override func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let cell = tableView.dequeueReusableCell(withIdentifier: "districtCell", for: indexPath)
-        // Configure the cell...
-        cell.textLabel?.text  = DataService.shared.districts[indexPath.row].name
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = DataService.shared.cities[indexPath.row].name
         return cell
     }
-
+    override func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        DataService.shared.cityCodeSelected = DataService.shared.cities[indexPath.row].cityCode
+        UserDefaults.standard.set(DataService.shared.cities[indexPath.row].name, forKey: "City")
+    }
+    
     /*
     // Override to support conditional editing of the table view.
     override func tableView(_ tableView: UITableView, canEditRowAt indexPath: IndexPath) -> Bool {
