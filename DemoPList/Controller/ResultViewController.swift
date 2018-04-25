@@ -16,7 +16,11 @@ class ResultViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+        
+        cityText.text = UserDefaults.standard.string(forKey: "City")
+        districtText.text = UserDefaults.standard.string(forKey: "Dictrict")
+        ageText.text = UserDefaults.standard.string(forKey: "Age")
+        sexText.text = UserDefaults.standard.string(forKey: "Sex")
     }
 
     override func didReceiveMemoryWarning() {

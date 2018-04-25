@@ -16,9 +16,10 @@ class SexViewController: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        saveButton.isEnabled = false
+        
     }
     override func viewWillAppear(_ animated: Bool) {
+        saveButton.isEnabled = false
        
     }
     override func didReceiveMemoryWarning() {
@@ -27,9 +28,18 @@ class SexViewController: UIViewController {
     }
     
     @IBAction func clickButton(_ sender: UIButton) {
+        sender.isSelected = true
         
+        chooseButtons.forEach{ check in
+            if check != sender {
+                check.isSelected = false
+                saveButton.isEnabled = true
+            }
+        }
+        UserDefaults.standard.removeObject(forKey: "Sex")
+        UserDefaults.standard.set(sender.titleLabel?.text, forKey: "Sex")
+        statusLabel.text = UserDefaults.standard.string(forKey: "Sex")
     }
-    
     /*
     // MARK: - Navigation
 

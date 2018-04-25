@@ -11,6 +11,7 @@ import UIKit
 class PickerViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewDataSource {
     @IBOutlet weak var pickerView: UIPickerView!
     @IBOutlet weak var okButton: UIButton!
+    @IBOutlet weak var ageLabel: UILabel!
     var arrAge = Array(1...100)
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -29,6 +30,7 @@ class PickerViewController: UIViewController ,UIPickerViewDelegate,UIPickerViewD
     }
     func pickerView(_ pickerView: UIPickerView, didSelectRow row: Int, inComponent component: Int) {
         UserDefaults.standard.set(String(arrAge[row]), forKey: "Age")
+        ageLabel.text = UserDefaults.standard.string(forKey: "Age")
     }
     /*
     // MARK: - Navigation
