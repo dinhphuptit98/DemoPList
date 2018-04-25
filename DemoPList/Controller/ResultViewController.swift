@@ -13,7 +13,6 @@ class ResultViewController: UIViewController {
     @IBOutlet weak var districtText: UITextField!
     @IBOutlet weak var ageText: UITextField!
     @IBOutlet weak var sexText: UITextField!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
         
@@ -22,12 +21,11 @@ class ResultViewController: UIViewController {
         ageText.text = UserDefaults.standard.string(forKey: "Age")
         sexText.text = UserDefaults.standard.string(forKey: "Sex")
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-    
 
     /*
     // MARK: - Navigation

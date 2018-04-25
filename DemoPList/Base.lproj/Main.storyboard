@@ -229,7 +229,7 @@
         <!--Result View Controller-->
         <scene sceneID="FJA-mk-IWf">
             <objects>
-                <viewController id="SLF-kh-Xy2" customClass="ResultViewController" customModule="DemoPList" customModuleProvider="target" sceneMemberID="viewController">
+                <viewController storyboardIdentifier="Result" id="SLF-kh-Xy2" customClass="ResultViewController" customModule="DemoPList" customModuleProvider="target" sceneMemberID="viewController">
                     <view key="view" contentMode="scaleToFill" id="4Zf-2s-dZp">
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
@@ -323,9 +323,17 @@
                                     </stackView>
                                 </subviews>
                             </stackView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Nguyễn Đình Phú" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="I6n-dm-Mbz">
+                                <rect key="frame" x="107" y="102" width="162" height="24"/>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="20"/>
+                                <color key="textColor" red="1" green="0.16865183258626504" blue="0.089938184573732816" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                         <constraints>
+                            <constraint firstItem="I6n-dm-Mbz" firstAttribute="centerX" secondItem="4Zf-2s-dZp" secondAttribute="centerX" id="1g3-wP-eWJ"/>
+                            <constraint firstItem="0EX-CV-9Vk" firstAttribute="top" secondItem="I6n-dm-Mbz" secondAttribute="bottom" constant="60" id="264-iZ-D6N"/>
                             <constraint firstItem="0EX-CV-9Vk" firstAttribute="centerX" secondItem="4Zf-2s-dZp" secondAttribute="centerX" id="JUf-tt-IjZ"/>
                             <constraint firstItem="0EX-CV-9Vk" firstAttribute="centerY" secondItem="4Zf-2s-dZp" secondAttribute="centerY" id="fl0-sD-AeC"/>
                         </constraints>
